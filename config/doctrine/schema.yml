@@ -1,21 +1,25 @@
 blogUsers:
   actAs: { Timestampable: ~ }
   columns:
-  	id:   { type: integer, notnull: true }
-  	name: { type: string(255), notnull: true, unique: true }
-  	pass: { type: string(255), notnull:true }
-  	messages: { type: integer }
+#    id:         ~
+    user_id:    { type: integer }
+    name:       { type: string(255), notnull: true }
+    pass:       { type: string(255), notnull:true }
+    messages:   { type: integer }
+    created_at: ~
  
 blogPosts:
   actAs: { Timestampable: ~ }
   columns:
-  	id:    { type: integer, notnull: true }
-    post:  { type: string(5000), notnull: true }
-    photo: { type: string }
+#    id:         ~
+    post:       { type: string(5000), notnull: true }
+    photo:      { type: string }
+    created_at: ~
  
 blogComments:
   actAs: { Timestampable: ~ }
   columns:
-  	id:      { type: integer, notnull: true }
-    post_id: { type: integer, notnull: true }
-    photo:   { type: string }
+#    id:         ~
+    commentary: { type: string(3000), notnull: true }
+    photo:      { type: string }
+    created_at: ~
