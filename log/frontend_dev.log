@@ -33,3 +33,101 @@ May 31 14:44:51 symfony [info] {sfWebDebugLogger} Factories 122.99 ms (1)
 May 31 14:44:51 symfony [info] {sfWebDebugLogger} Action "default/index" 0.53 ms (1)
 May 31 14:44:51 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 35.72 ms (1)
 May 31 14:44:51 symfony [info] {sfWebResponse} Send content (28421 o)
+May 31 22:10:53 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+May 31 22:10:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 22:10:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 22:10:58 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 31 22:11:01 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 22:11:01 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.post AS b__post, b.photo AS b__photo, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_posts b - ()
+May 31 22:11:01 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php"
+May 31 22:11:02 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+May 31 22:11:02 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+May 31 22:11:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 31 22:11:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 22:11:02 symfony [info] {sfWebDebugLogger} Configuration 1863.98 ms (10)
+May 31 22:11:02 symfony [info] {sfWebDebugLogger} Factories 4893.77 ms (1)
+May 31 22:11:02 symfony [info] {sfWebDebugLogger} Action "main/index" 3017.52 ms (1)
+May 31 22:11:02 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+May 31 22:11:02 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 340.15 ms (1)
+May 31 22:11:02 symfony [info] {sfWebResponse} Send content (29725 o)
+May 31 22:11:19 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /main/new with parameters array (  'module' => 'main',  'action' => 'new',)
+May 31 22:11:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 22:11:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 22:11:19 symfony [info] {mainActions} Call "mainActions->executeNew()"
+May 31 22:11:19 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/newSuccess.php"
+May 31 22:11:19 symfony [info] {sfPartialView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/_form.php"
+May 31 22:11:19 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+May 31 22:11:19 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+May 31 22:11:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 31 22:11:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 22:11:19 symfony [info] {sfWebDebugLogger} Configuration 6.98 ms (9)
+May 31 22:11:19 symfony [info] {sfWebDebugLogger} Factories 482.90 ms (1)
+May 31 22:11:19 symfony [info] {sfWebDebugLogger} Action "main/new" 153.81 ms (1)
+May 31 22:11:19 symfony [info] {sfWebDebugLogger} View "Success" for "main/new" 181.79 ms (1)
+May 31 22:11:19 symfony [info] {sfWebDebugLogger} Partial "main/_form" 100.67 ms (1)
+May 31 22:11:20 symfony [info] {sfWebResponse} Send content (41956 o)
+May 31 22:49:17 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /main/new with parameters array (  'module' => 'main',  'action' => 'new',)
+May 31 22:49:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 22:49:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 22:49:18 symfony [info] {mainActions} Call "mainActions->executeNew()"
+May 31 22:49:19 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/newSuccess.php"
+May 31 22:49:19 symfony [info] {sfPartialView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/_form.php"
+May 31 22:49:19 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+May 31 22:49:19 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+May 31 22:49:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 31 22:49:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 22:49:19 symfony [info] {sfWebDebugLogger} Configuration 5.32 ms (9)
+May 31 22:49:19 symfony [info] {sfWebDebugLogger} Factories 1864.83 ms (1)
+May 31 22:49:19 symfony [info] {sfWebDebugLogger} Action "main/new" 649.46 ms (1)
+May 31 22:49:19 symfony [info] {sfWebDebugLogger} View "Success" for "main/new" 261.34 ms (1)
+May 31 22:49:19 symfony [info] {sfWebDebugLogger} Partial "main/_form" 95.71 ms (1)
+May 31 22:49:19 symfony [info] {sfWebResponse} Send content (41758 o)
+May 31 22:59:27 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /main/new with parameters array (  'module' => 'main',  'action' => 'new',)
+May 31 22:59:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 22:59:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 22:59:28 symfony [info] {mainActions} Call "mainActions->executeNew()"
+May 31 22:59:29 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/newSuccess.php"
+May 31 22:59:29 symfony [info] {sfPartialView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/_form.php"
+May 31 22:59:29 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+May 31 22:59:29 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+May 31 22:59:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 31 22:59:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 22:59:29 symfony [info] {sfWebDebugLogger} Configuration 4.29 ms (9)
+May 31 22:59:29 symfony [info] {sfWebDebugLogger} Factories 1165.91 ms (1)
+May 31 22:59:29 symfony [info] {sfWebDebugLogger} Action "main/new" 1144.95 ms (1)
+May 31 22:59:29 symfony [info] {sfWebDebugLogger} View "Success" for "main/new" 391.92 ms (1)
+May 31 22:59:29 symfony [info] {sfWebDebugLogger} Partial "main/_form" 163.91 ms (1)
+May 31 22:59:30 symfony [info] {sfWebResponse} Send content (42012 o)
+May 31 23:04:15 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /main/new with parameters array (  'module' => 'main',  'action' => 'new',)
+May 31 23:04:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 23:04:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 23:04:16 symfony [info] {mainActions} Call "mainActions->executeNew()"
+May 31 23:04:25 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/newSuccess.php"
+May 31 23:04:26 symfony [info] {sfPartialView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/_form.php"
+May 31 23:04:27 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+May 31 23:04:27 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+May 31 23:04:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 31 23:04:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 23:04:27 symfony [info] {sfWebDebugLogger} Configuration 3.73 ms (9)
+May 31 23:04:27 symfony [info] {sfWebDebugLogger} Factories 2042.12 ms (1)
+May 31 23:04:27 symfony [info] {sfWebDebugLogger} Action "main/new" 7519.13 ms (1)
+May 31 23:04:27 symfony [info] {sfWebDebugLogger} View "Success" for "main/new" 3492.55 ms (1)
+May 31 23:04:27 symfony [info] {sfWebDebugLogger} Partial "main/_form" 991.64 ms (1)
+May 31 23:04:28 symfony [info] {sfWebResponse} Send content (41991 o)
+May 31 23:05:01 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+May 31 23:05:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 31 23:05:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 31 23:05:02 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 31 23:05:03 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 31 23:05:03 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.post AS b__post, b.photo AS b__photo, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_posts b - ()
+May 31 23:05:03 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php"
+May 31 23:05:03 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+May 31 23:05:03 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+May 31 23:05:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 31 23:05:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 31 23:05:03 symfony [info] {sfWebDebugLogger} Configuration 4.27 ms (9)
+May 31 23:05:03 symfony [info] {sfWebDebugLogger} Factories 419.13 ms (1)
+May 31 23:05:03 symfony [info] {sfWebDebugLogger} Action "main/index" 1611.13 ms (1)
+May 31 23:05:03 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+May 31 23:05:03 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 107.24 ms (1)
+May 31 23:05:04 symfony [info] {sfWebResponse} Send content (29991 o)
