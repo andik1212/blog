@@ -1,0 +1,21 @@
+blogUsers:
+  actAs: { Timestampable: ~ }
+  columns:
+  	id:   { type: integer, notnull: true }
+  	name: { type: string(255), notnull: true, unique: true }
+  	pass: { type: string(255), notnull:true }
+  	messages: { type: integer }
+ 
+blogPosts:
+  actAs: { Timestampable: ~ }
+  columns:
+  	id:    { type: integer, notnull: true }
+    post:  { type: string(5000), notnull: true }
+    photo: { type: string }
+ 
+blogComments:
+  actAs: { Timestampable: ~ }
+  columns:
+  	id:      { type: integer, notnull: true }
+    post_id: { type: integer, notnull: true }
+    photo:   { type: string }
