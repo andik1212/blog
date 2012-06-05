@@ -1,0 +1,50 @@
+/* RESET DEFAULT STYLES */
+html,body { width:100%; height:100%; }
+body      { padding:0; margin:0; font:12px Tahoma, sans-serif; background: url(../images/bg.png) repeat-x #9CC6E7; color:#000; }
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
+	padding:0;
+	margin:0;
+	outline:none;
+	list-style:none;
+}
+select, input, textarea { font:12px Tahoma, sans-serif; vertical-align:middle; }
+textarea { vertical-align:top; }
+:focus   { outline:none; }
+input[type=submit] { cursor:pointer; }
+img, fieldset { border:0; }
+table    { border-collapse:collapse; border-spacing:0; }
+a:link, a:visited { font:12px Tahoma, sans-serif; color:#000; text-decoration:underline; }
+a:hover  { text-decoration:none; }
+
+/* DEFAULT CLASSES */
+.floatright { float:right !important; }
+.floatleft { float:left !important; }
+.no-float { float:none !important; }
+.no-border { border:0 !important; }
+.no-bg   { background:none !important; }
+.no-margin { margin:0 !important; }
+.no-padding { padding:0 !important; }
+.no-display { display:none !important; }
+.display { display:block !important; }
+.inline  { display:inline !important; }
+.overflow { overflow:hidden !important; }
+.alignright { text-align:right !important; }
+.alignleft { text-align:left !important; }
+.aligncenter { text-align:center !important; }
+.clear   { clear:both; }
+
+/* WRAPPER */
+.wrapper { width:1000px; margin:0 auto; background:#fff;}
+/* HEADER */
+.header { background:url(../images/head.jpg) center no-repeat; height:173px; margin-bottom:20px; }
+	.regist { float:right; display:block;width:220px; margin:10px 30px 0 0}
+	.regist li { text-align:right; display:block; margin-bottom:5px; }
+	.regist li:last-child input { padding:5px;}
+
+/* CONTENT */
+.content { margin-bottom:20px; padding:0 20px;}
+.comments li { display:block; border:1px solid #000; margin-bottom:5px; text-align:justify; line-height:15px;}
+/* SIDEBAR */
+
+/* FOOTER */
+.footer { background:url(../images/footer.jpg) no-repeat center; height:291px;}

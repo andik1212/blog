@@ -1,0 +1,18 @@
+# apps/frontend/config/view.yml
+default:
+  http_metas:
+    content-type: text/html
+ 
+  metas:
+    #title:        symfony project
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     ru
+    #robots:       index, follow
+ 
+  stylesheets:    [main.css]
+ 
+  javascripts:    []
+ 
+  has_layout:     true
+  layout:         layout
