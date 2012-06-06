@@ -1387,3 +1387,732 @@ Jun 06 00:56:20 symfony [info] {sfWebDebugLogger} Action "signin/new" 102.15 ms 
 Jun 06 00:56:20 symfony [info] {sfWebDebugLogger} View "Success" for "signin/new" 180.85 ms (1)
 Jun 06 00:56:20 symfony [info] {sfWebDebugLogger} Partial "signin/_form" 122.57 ms (1)
 Jun 06 00:56:20 symfony [info] {sfWebResponse} Send content (43382 o)
+Jun 06 02:23:53 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /signin with parameters array (  'module' => 'signin',  'action' => 'index',)
+Jun 06 02:23:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 02:23:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 02:23:53 symfony [info] {signinActions} Call "signinActions->executeIndex()"
+Jun 06 02:23:54 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 02:23:54 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.user_id AS b__user_id, b.name AS b__name, b.pass AS b__pass, b.messages AS b__messages, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_users b - ()
+Jun 06 02:23:54 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/signin/templates/indexSuccess.php"
+Jun 06 02:23:54 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 02:23:54 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 02:23:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 02:23:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 02:23:54 symfony [info] {sfWebDebugLogger} Configuration 4.35 ms (9)
+Jun 06 02:23:54 symfony [info] {sfWebDebugLogger} Factories 438.95 ms (1)
+Jun 06 02:23:54 symfony [info] {sfWebDebugLogger} Action "signin/index" 762.31 ms (1)
+Jun 06 02:23:54 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Jun 06 02:23:54 symfony [info] {sfWebDebugLogger} View "Success" for "signin/index" 104.86 ms (1)
+Jun 06 02:23:54 symfony [info] {sfWebResponse} Send content (30198 o)
+Jun 06 02:24:01 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 02:24:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 02:24:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 02:24:01 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 02:24:01 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 02:24:01 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.post AS b__post, b.photo AS b__photo, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_posts b - ()
+Jun 06 02:24:01 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 06 02:24:01 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 2 (A session had already been started - ignoring session_start())
+Jun 06 02:24:01 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 02:24:01 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 02:24:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 02:24:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 02:24:01 symfony [info] {sfWebDebugLogger} Configuration 4.39 ms (9)
+Jun 06 02:24:01 symfony [info] {sfWebDebugLogger} Factories 100.57 ms (1)
+Jun 06 02:24:01 symfony [info] {sfWebDebugLogger} Action "main/index" 139.15 ms (1)
+Jun 06 02:24:01 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 06 02:24:01 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 144.01 ms (1)
+Jun 06 02:24:01 symfony [info] {sfWebResponse} Send content (38872 o)
+Jun 06 10:31:48 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 10:31:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 10:31:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 10:31:50 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 10:31:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 10:31:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.post AS b__post, b.photo AS b__photo, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_posts b - ()
+Jun 06 10:31:52 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 06 10:31:52 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 2 (A session had already been started - ignoring session_start())
+Jun 06 10:31:52 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 10:31:52 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 10:31:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 10:31:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 10:31:52 symfony [info] {sfWebDebugLogger} Configuration 4.22 ms (9)
+Jun 06 10:31:52 symfony [info] {sfWebDebugLogger} Factories 2218.10 ms (1)
+Jun 06 10:31:52 symfony [info] {sfWebDebugLogger} Action "main/index" 1632.94 ms (1)
+Jun 06 10:31:52 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Jun 06 10:31:52 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 775.64 ms (1)
+Jun 06 10:31:53 symfony [info] {sfWebResponse} Send content (38678 o)
+Jun 06 12:20:13 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 12:20:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 12:20:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 12:20:14 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 12:20:15 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 12:20:15 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.post AS b__post, b.photo AS b__photo, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_posts b - ()
+Jun 06 12:20:15 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 06 12:20:16 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 2 (A session had already been started - ignoring session_start())
+Jun 06 12:20:16 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 54 (Undefined variable: blog_commentss)
+Jun 06 12:20:16 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 54 (Invalid argument supplied for foreach())
+Jun 06 12:20:16 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 54 (Undefined variable: blog_commentss)
+Jun 06 12:20:16 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 54 (Invalid argument supplied for foreach())
+Jun 06 12:20:16 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:20:16 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:20:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 12:20:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:20:16 symfony [info] {sfWebDebugLogger} Configuration 19.95 ms (9)
+Jun 06 12:20:16 symfony [info] {sfWebDebugLogger} Factories 2100.05 ms (1)
+Jun 06 12:20:16 symfony [info] {sfWebDebugLogger} Action "main/index" 1339.39 ms (1)
+Jun 06 12:20:16 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 06 12:20:16 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 637.33 ms (1)
+Jun 06 12:20:16 symfony [info] {sfWebResponse} Send content (39810 o)
+Jun 06 12:20:53 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /comment/new with parameters array (  'module' => 'comment',  'action' => 'new',)
+Jun 06 12:20:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 12:20:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 12:20:53 symfony [info] {commentActions} Call "commentActions->executeNew()"
+Jun 06 12:20:54 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/comment/templates/newSuccess.php"
+Jun 06 12:20:54 symfony [info] {sfPartialView} Render "/home/sfproject/blog/apps/frontend/modules/comment/templates/_form.php"
+Jun 06 12:20:54 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:20:54 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:20:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 12:20:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:20:54 symfony [info] {sfWebDebugLogger} Configuration 76.88 ms (10)
+Jun 06 12:20:54 symfony [info] {sfWebDebugLogger} Factories 82.24 ms (1)
+Jun 06 12:20:54 symfony [info] {sfWebDebugLogger} Action "comment/new" 74.05 ms (1)
+Jun 06 12:20:54 symfony [info] {sfWebDebugLogger} View "Success" for "comment/new" 180.94 ms (1)
+Jun 06 12:20:54 symfony [info] {sfWebDebugLogger} Partial "comment/_form" 129.05 ms (1)
+Jun 06 12:20:54 symfony [info] {sfWebResponse} Send content (42240 o)
+Jun 06 12:20:58 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /comment/new with parameters array (  'module' => 'comment',  'action' => 'new',)
+Jun 06 12:20:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 12:20:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 12:20:58 symfony [info] {commentActions} Call "commentActions->executeNew()"
+Jun 06 12:20:59 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/comment/templates/newSuccess.php"
+Jun 06 12:20:59 symfony [info] {sfPartialView} Render "/home/sfproject/blog/apps/frontend/modules/comment/templates/_form.php"
+Jun 06 12:20:59 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:20:59 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:20:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 12:20:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:20:59 symfony [info] {sfWebDebugLogger} Configuration 3.58 ms (9)
+Jun 06 12:20:59 symfony [info] {sfWebDebugLogger} Factories 120.24 ms (1)
+Jun 06 12:20:59 symfony [info] {sfWebDebugLogger} Action "comment/new" 205.88 ms (1)
+Jun 06 12:20:59 symfony [info] {sfWebDebugLogger} View "Success" for "comment/new" 113.80 ms (1)
+Jun 06 12:20:59 symfony [info] {sfWebDebugLogger} Partial "comment/_form" 83.47 ms (1)
+Jun 06 12:20:59 symfony [info] {sfWebResponse} Send content (42238 o)
+Jun 06 12:21:01 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 12:21:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 12:21:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 12:21:01 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 12:21:01 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 12:21:01 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.post AS b__post, b.photo AS b__photo, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_posts b - ()
+Jun 06 12:21:01 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 06 12:21:01 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 2 (A session had already been started - ignoring session_start())
+Jun 06 12:21:01 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 54 (Undefined variable: blog_commentss)
+Jun 06 12:21:01 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 54 (Invalid argument supplied for foreach())
+Jun 06 12:21:01 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 54 (Undefined variable: blog_commentss)
+Jun 06 12:21:01 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 54 (Invalid argument supplied for foreach())
+Jun 06 12:21:01 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:21:01 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:21:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 12:21:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:21:01 symfony [info] {sfWebDebugLogger} Configuration 5.37 ms (9)
+Jun 06 12:21:01 symfony [info] {sfWebDebugLogger} Factories 209.30 ms (1)
+Jun 06 12:21:01 symfony [info] {sfWebDebugLogger} Action "main/index" 189.90 ms (1)
+Jun 06 12:21:01 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Jun 06 12:21:01 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 43.19 ms (1)
+Jun 06 12:21:01 symfony [info] {sfWebResponse} Send content (39946 o)
+Jun 06 12:24:41 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /comment/new with parameters array (  'module' => 'comment',  'action' => 'new',)
+Jun 06 12:24:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 12:24:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 12:24:42 symfony [info] {commentActions} Call "commentActions->executeNew()"
+Jun 06 12:24:44 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/comment/templates/newSuccess.php"
+Jun 06 12:24:44 symfony [info] {sfPartialView} Render "/home/sfproject/blog/apps/frontend/modules/comment/templates/_form.php"
+Jun 06 12:24:44 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:24:44 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:24:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 12:24:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:24:44 symfony [info] {sfWebDebugLogger} Configuration 5.12 ms (9)
+Jun 06 12:24:44 symfony [info] {sfWebDebugLogger} Factories 1576.68 ms (1)
+Jun 06 12:24:44 symfony [info] {sfWebDebugLogger} Action "comment/new" 1330.86 ms (1)
+Jun 06 12:24:44 symfony [info] {sfWebDebugLogger} View "Success" for "comment/new" 515.67 ms (1)
+Jun 06 12:24:44 symfony [info] {sfWebDebugLogger} Partial "comment/_form" 190.51 ms (1)
+Jun 06 12:24:44 symfony [info] {sfWebResponse} Send content (42241 o)
+Jun 06 12:24:48 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /comment/new with parameters array (  'module' => 'comment',  'action' => 'new',)
+Jun 06 12:24:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 12:24:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 12:24:48 symfony [info] {commentActions} Call "commentActions->executeNew()"
+Jun 06 12:24:48 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/comment/templates/newSuccess.php"
+Jun 06 12:24:48 symfony [info] {sfPartialView} Render "/home/sfproject/blog/apps/frontend/modules/comment/templates/_form.php"
+Jun 06 12:24:48 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:24:48 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:24:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 12:24:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:24:48 symfony [info] {sfWebDebugLogger} Configuration 3.98 ms (9)
+Jun 06 12:24:48 symfony [info] {sfWebDebugLogger} Factories 94.86 ms (1)
+Jun 06 12:24:48 symfony [info] {sfWebDebugLogger} Action "comment/new" 83.72 ms (1)
+Jun 06 12:24:48 symfony [info] {sfWebDebugLogger} View "Success" for "comment/new" 114.82 ms (1)
+Jun 06 12:24:48 symfony [info] {sfWebDebugLogger} Partial "comment/_form" 82.54 ms (1)
+Jun 06 12:24:48 symfony [info] {sfWebResponse} Send content (42267 o)
+Jun 06 12:24:57 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /comment with parameters array (  'module' => 'comment',  'action' => 'index',)
+Jun 06 12:24:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 12:24:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 12:24:58 symfony [info] {commentActions} Call "commentActions->executeIndex()"
+Jun 06 12:24:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 12:24:59 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.commentary AS b__commentary, b.photo AS b__photo, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_comments b - ()
+Jun 06 12:24:59 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/comment/templates/indexSuccess.php"
+Jun 06 12:24:59 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:24:59 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:24:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 12:24:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:24:59 symfony [info] {sfWebDebugLogger} Configuration 3.69 ms (9)
+Jun 06 12:24:59 symfony [info] {sfWebDebugLogger} Factories 885.79 ms (1)
+Jun 06 12:24:59 symfony [info] {sfWebDebugLogger} Action "comment/index" 1562.29 ms (1)
+Jun 06 12:24:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Jun 06 12:24:59 symfony [info] {sfWebDebugLogger} View "Success" for "comment/index" 257.01 ms (1)
+Jun 06 12:25:00 symfony [info] {sfWebResponse} Send content (30082 o)
+Jun 06 12:25:07 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /comment/new with parameters array (  'module' => 'comment',  'action' => 'new',)
+Jun 06 12:25:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 12:25:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 12:25:07 symfony [info] {commentActions} Call "commentActions->executeNew()"
+Jun 06 12:25:07 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/comment/templates/newSuccess.php"
+Jun 06 12:25:07 symfony [info] {sfPartialView} Render "/home/sfproject/blog/apps/frontend/modules/comment/templates/_form.php"
+Jun 06 12:25:07 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:25:07 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:25:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 12:25:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:25:07 symfony [info] {sfWebDebugLogger} Configuration 3.73 ms (9)
+Jun 06 12:25:07 symfony [info] {sfWebDebugLogger} Factories 82.84 ms (1)
+Jun 06 12:25:07 symfony [info] {sfWebDebugLogger} Action "comment/new" 69.00 ms (1)
+Jun 06 12:25:07 symfony [info] {sfWebDebugLogger} View "Success" for "comment/new" 96.58 ms (1)
+Jun 06 12:25:07 symfony [info] {sfWebDebugLogger} Partial "comment/_form" 70.92 ms (1)
+Jun 06 12:25:07 symfony [info] {sfWebResponse} Send content (42242 o)
+Jun 06 12:38:30 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 12:38:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 12:38:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 12:38:31 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 12:38:31 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 12:38:31 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.post AS b__post, b.photo AS b__photo, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_posts b - ()
+Jun 06 12:38:31 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 06 12:38:31 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 2 (A session had already been started - ignoring session_start())
+Jun 06 12:38:31 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 54 (Undefined variable: blog_commentss)
+Jun 06 12:38:31 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 54 (Invalid argument supplied for foreach())
+Jun 06 12:38:31 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 54 (Undefined variable: blog_commentss)
+Jun 06 12:38:31 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 54 (Invalid argument supplied for foreach())
+Jun 06 12:38:31 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:38:31 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:38:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 12:38:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:38:31 symfony [info] {sfWebDebugLogger} Configuration 3.79 ms (9)
+Jun 06 12:38:31 symfony [info] {sfWebDebugLogger} Factories 140.37 ms (1)
+Jun 06 12:38:31 symfony [info] {sfWebDebugLogger} Action "main/index" 106.34 ms (1)
+Jun 06 12:38:31 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Jun 06 12:38:31 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 47.25 ms (1)
+Jun 06 12:38:31 symfony [info] {sfWebResponse} Send content (39978 o)
+Jun 06 12:40:28 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 12:40:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 12:40:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 12:40:28 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 12:40:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 12:40:28 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.post AS b__post, b.photo AS b__photo, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_posts b - ()
+Jun 06 12:40:28 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 06 12:40:28 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 2 (A session had already been started - ignoring session_start())
+Jun 06 12:40:28 symfony [err] {sfConfigurationException} The route "comment" does not exist.
+Jun 06 12:40:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 06 12:40:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:40:28 symfony [info] {sfWebDebugLogger} Configuration 4.64 ms (9)
+Jun 06 12:40:28 symfony [info] {sfWebDebugLogger} Factories 102.47 ms (1)
+Jun 06 12:40:28 symfony [info] {sfWebDebugLogger} Action "main/index" 88.94 ms (1)
+Jun 06 12:40:28 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 06 12:40:28 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 184.11 ms (1)
+Jun 06 12:40:50 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /signin/new with parameters array (  'module' => 'signin',  'action' => 'new',)
+Jun 06 12:40:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 12:40:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 12:40:51 symfony [info] {signinActions} Call "signinActions->executeNew()"
+Jun 06 12:40:52 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/signin/templates/newSuccess.php"
+Jun 06 12:40:53 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:40:53 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:40:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 12:40:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:40:53 symfony [info] {sfWebDebugLogger} Configuration 3.85 ms (9)
+Jun 06 12:40:53 symfony [info] {sfWebDebugLogger} Factories 1465.15 ms (1)
+Jun 06 12:40:53 symfony [info] {sfWebDebugLogger} Action "signin/new" 1431.65 ms (1)
+Jun 06 12:40:53 symfony [info] {sfWebDebugLogger} View "Success" for "signin/new" 860.62 ms (1)
+Jun 06 12:40:53 symfony [info] {sfWebResponse} Send content (29020 o)
+Jun 06 12:40:55 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /signin/new with parameters array (  'module' => 'signin',  'action' => 'new',)
+Jun 06 12:40:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 12:40:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 12:40:55 symfony [info] {signinActions} Call "signinActions->executeNew()"
+Jun 06 12:40:55 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/signin/templates/newSuccess.php"
+Jun 06 12:40:55 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:40:55 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:40:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 12:40:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:40:55 symfony [info] {sfWebDebugLogger} Configuration 3.95 ms (9)
+Jun 06 12:40:55 symfony [info] {sfWebDebugLogger} Factories 99.67 ms (1)
+Jun 06 12:40:55 symfony [info] {sfWebDebugLogger} Action "signin/new" 387.04 ms (1)
+Jun 06 12:40:55 symfony [info] {sfWebDebugLogger} View "Success" for "signin/new" 100.37 ms (1)
+Jun 06 12:40:55 symfony [info] {sfWebResponse} Send content (28813 o)
+Jun 06 12:40:56 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /main/edit/id/3 with parameters array (  'module' => 'main',  'action' => 'edit',  'id' => '3',)
+Jun 06 12:40:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 12:40:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 12:40:56 symfony [info] {mainActions} Call "mainActions->executeEdit()"
+Jun 06 12:40:57 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 12:40:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 12:40:58 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 12:40:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT b.id AS b__id, b.post AS b__post, b.photo AS b__photo, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_posts b WHERE (b.id = ?) LIMIT 1 - (3)
+Jun 06 12:40:58 symfony [err] {sfError404Exception} Object blog_posts does not exist (3).
+Jun 06 12:40:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 12:40:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:40:59 symfony [info] {sfWebDebugLogger} Configuration 3.04 ms (8)
+Jun 06 12:40:59 symfony [info] {sfWebDebugLogger} Factories 79.53 ms (1)
+Jun 06 12:40:59 symfony [info] {sfWebDebugLogger} Action "main/edit" 2023.80 ms (1)
+Jun 06 12:40:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 06 12:40:59 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /signin/new with parameters array (  'module' => 'signin',  'action' => 'new',)
+Jun 06 12:41:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 12:41:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 12:41:00 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 12:41:00 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 12:41:00 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.post AS b__post, b.photo AS b__photo, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_posts b - ()
+Jun 06 12:41:00 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 06 12:41:00 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 2 (A session had already been started - ignoring session_start())
+Jun 06 12:41:00 symfony [err] {sfConfigurationException} The route "comment" does not exist.
+Jun 06 12:41:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 06 12:41:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:41:00 symfony [info] {sfWebDebugLogger} Configuration 5.68 ms (9)
+Jun 06 12:41:00 symfony [info] {sfWebDebugLogger} Factories 1913.46 ms (1)
+Jun 06 12:41:00 symfony [info] {sfWebDebugLogger} Action "main/index" 133.48 ms (1)
+Jun 06 12:41:00 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Jun 06 12:41:00 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 226.97 ms (1)
+Jun 06 12:41:01 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 12:41:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 12:41:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 12:41:04 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 12:41:04 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /signin with parameters array (  'module' => 'signin',  'action' => 'index',)
+Jun 06 12:41:04 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /signin with parameters array (  'module' => 'signin',  'action' => 'index',)
+Jun 06 12:41:06 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 12:41:06 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.post AS b__post, b.photo AS b__photo, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_posts b - ()
+Jun 06 12:41:06 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 12:41:07 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 06 12:41:07 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 2 (A session had already been started - ignoring session_start())
+Jun 06 12:41:07 symfony [err] {sfConfigurationException} The route "comment" does not exist.
+Jun 06 12:41:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 06 12:41:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:41:07 symfony [info] {sfWebDebugLogger} Configuration 4.05 ms (9)
+Jun 06 12:41:07 symfony [info] {sfWebDebugLogger} Factories 7532.16 ms (1)
+Jun 06 12:41:07 symfony [info] {sfWebDebugLogger} Action "main/index" 2092.87 ms (1)
+Jun 06 12:41:07 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Jun 06 12:41:07 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 516.94 ms (1)
+Jun 06 12:41:07 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /signin with parameters array (  'module' => 'signin',  'action' => 'index',)
+Jun 06 12:41:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 12:41:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 12:41:07 symfony [info] {signinActions} Call "signinActions->executeNew()"
+Jun 06 12:41:07 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/signin/templates/newSuccess.php"
+Jun 06 12:41:07 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:41:07 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:41:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 12:41:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:41:07 symfony [info] {sfWebDebugLogger} Configuration 4.15 ms (9)
+Jun 06 12:41:07 symfony [info] {sfWebDebugLogger} Factories 8411.36 ms (1)
+Jun 06 12:41:07 symfony [info] {sfWebDebugLogger} Action "signin/new" 91.57 ms (1)
+Jun 06 12:41:07 symfony [info] {sfWebDebugLogger} View "Success" for "signin/new" 40.75 ms (1)
+Jun 06 12:41:07 symfony [info] {sfWebResponse} Send content (28812 o)
+Jun 06 12:41:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 12:41:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 12:41:08 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 12:41:08 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 12:41:08 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.post AS b__post, b.photo AS b__photo, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_posts b - ()
+Jun 06 12:41:08 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 06 12:41:08 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 2 (A session had already been started - ignoring session_start())
+Jun 06 12:41:08 symfony [err] {sfConfigurationException} The route "comment" does not exist.
+Jun 06 12:41:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 06 12:41:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:41:08 symfony [info] {sfWebDebugLogger} Configuration 6.21 ms (9)
+Jun 06 12:41:08 symfony [info] {sfWebDebugLogger} Factories 6955.22 ms (1)
+Jun 06 12:41:08 symfony [info] {sfWebDebugLogger} Action "main/index" 155.59 ms (1)
+Jun 06 12:41:08 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Jun 06 12:41:08 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 224.72 ms (1)
+Jun 06 12:41:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 12:41:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 12:41:09 symfony [info] {signinActions} Call "signinActions->executeIndex()"
+Jun 06 12:41:10 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 12:41:10 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.user_id AS b__user_id, b.name AS b__name, b.pass AS b__pass, b.messages AS b__messages, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_users b - ()
+Jun 06 12:41:10 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/signin/templates/indexSuccess.php"
+Jun 06 12:41:10 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:41:10 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:41:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 12:41:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:41:10 symfony [info] {sfWebDebugLogger} Configuration 3.88 ms (9)
+Jun 06 12:41:10 symfony [info] {sfWebDebugLogger} Factories 6587.02 ms (1)
+Jun 06 12:41:10 symfony [info] {sfWebDebugLogger} Action "signin/index" 1296.60 ms (1)
+Jun 06 12:41:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Jun 06 12:41:10 symfony [info] {sfWebDebugLogger} View "Success" for "signin/index" 225.12 ms (1)
+Jun 06 12:41:11 symfony [info] {sfWebResponse} Send content (30320 o)
+Jun 06 12:41:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 12:41:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 12:41:12 symfony [info] {signinActions} Call "signinActions->executeIndex()"
+Jun 06 12:41:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 12:41:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.user_id AS b__user_id, b.name AS b__name, b.pass AS b__pass, b.messages AS b__messages, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_users b - ()
+Jun 06 12:41:13 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/signin/templates/indexSuccess.php"
+Jun 06 12:41:13 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:41:13 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:41:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 12:41:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:41:13 symfony [info] {sfWebDebugLogger} Configuration 4.37 ms (9)
+Jun 06 12:41:13 symfony [info] {sfWebDebugLogger} Factories 5170.55 ms (1)
+Jun 06 12:41:13 symfony [info] {sfWebDebugLogger} Action "signin/index" 975.96 ms (1)
+Jun 06 12:41:13 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Jun 06 12:41:13 symfony [info] {sfWebDebugLogger} View "Success" for "signin/index" 95.80 ms (1)
+Jun 06 12:41:13 symfony [info] {sfWebResponse} Send content (30317 o)
+Jun 06 12:41:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 12:41:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 12:41:13 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 12:41:15 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 12:41:16 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.post AS b__post, b.photo AS b__photo, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_posts b - ()
+Jun 06 12:41:16 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 06 12:41:16 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 2 (A session had already been started - ignoring session_start())
+Jun 06 12:41:16 symfony [err] {sfConfigurationException} The route "comment" does not exist.
+Jun 06 12:41:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 06 12:41:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:41:16 symfony [info] {sfWebDebugLogger} Configuration 4.28 ms (9)
+Jun 06 12:41:16 symfony [info] {sfWebDebugLogger} Factories 8391.73 ms (1)
+Jun 06 12:41:16 symfony [info] {sfWebDebugLogger} Action "main/index" 2428.60 ms (1)
+Jun 06 12:41:16 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Jun 06 12:41:16 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 762.05 ms (1)
+Jun 06 12:41:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 12:41:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 12:41:18 symfony [info] {signinActions} Call "signinActions->executeIndex()"
+Jun 06 12:41:18 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /commentary with parameters array (  'module' => 'commentary',  'action' => 'index',)
+Jun 06 12:41:19 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 12:41:19 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.user_id AS b__user_id, b.name AS b__name, b.pass AS b__pass, b.messages AS b__messages, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_users b - ()
+Jun 06 12:41:19 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/signin/templates/indexSuccess.php"
+Jun 06 12:41:19 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:41:19 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:41:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 12:41:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:41:19 symfony [info] {sfWebDebugLogger} Configuration 3.59 ms (9)
+Jun 06 12:41:19 symfony [info] {sfWebDebugLogger} Factories 16891.55 ms (1)
+Jun 06 12:41:19 symfony [info] {sfWebDebugLogger} Action "signin/index" 1102.92 ms (1)
+Jun 06 12:41:19 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 06 12:41:19 symfony [info] {sfWebDebugLogger} View "Success" for "signin/index" 124.18 ms (1)
+Jun 06 12:41:19 symfony [info] {sfWebResponse} Send content (30398 o)
+Jun 06 12:41:19 symfony [info] {sfFrontWebController} Action "commentary/index" does not exist
+Jun 06 12:41:19 symfony [err] {sfError404Exception} Action "commentary/index" does not exist.
+Jun 06 12:41:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 12:41:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:41:19 symfony [info] {sfWebDebugLogger} Configuration 2.41 ms (5)
+Jun 06 12:41:19 symfony [info] {sfWebDebugLogger} Factories 827.53 ms (1)
+Jun 06 12:41:27 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /commentary/show with parameters array (  'module' => 'commentary',  'action' => 'show',)
+Jun 06 12:41:27 symfony [info] {sfFrontWebController} Action "commentary/show" does not exist
+Jun 06 12:41:27 symfony [err] {sfError404Exception} Action "commentary/show" does not exist.
+Jun 06 12:41:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 12:41:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:41:27 symfony [info] {sfWebDebugLogger} Configuration 4.46 ms (5)
+Jun 06 12:41:27 symfony [info] {sfWebDebugLogger} Factories 87.02 ms (1)
+Jun 06 12:41:35 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /commentary/wiew with parameters array (  'module' => 'commentary',  'action' => 'wiew',)
+Jun 06 12:41:35 symfony [info] {sfFrontWebController} Action "commentary/wiew" does not exist
+Jun 06 12:41:35 symfony [err] {sfError404Exception} Action "commentary/wiew" does not exist.
+Jun 06 12:41:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 12:41:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:41:35 symfony [info] {sfWebDebugLogger} Configuration 3.29 ms (5)
+Jun 06 12:41:35 symfony [info] {sfWebDebugLogger} Factories 143.95 ms (1)
+Jun 06 12:41:49 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/comment/" (/).
+Jun 06 12:41:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 12:41:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:41:49 symfony [info] {sfWebDebugLogger} Configuration 1.98 ms (5)
+Jun 06 12:41:49 symfony [info] {sfWebDebugLogger} Factories 85.83 ms (1)
+Jun 06 12:44:21 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/comment/" (/).
+Jun 06 12:44:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 12:44:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:44:21 symfony [info] {sfWebDebugLogger} Configuration 5.40 ms (5)
+Jun 06 12:44:21 symfony [info] {sfWebDebugLogger} Factories 271.61 ms (1)
+Jun 06 12:58:14 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 12:58:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 12:58:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 12:58:14 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 12:58:14 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 12:58:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.post AS b__post, b.photo AS b__photo, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_posts b - ()
+Jun 06 12:58:14 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 06 12:58:14 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 2 (A session had already been started - ignoring session_start())
+Jun 06 12:58:14 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 54 (Undefined variable: blog_comments)
+Jun 06 12:58:18 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 12:58:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 12:58:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 12:58:18 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 12:58:18 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 12:58:18 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.post AS b__post, b.photo AS b__photo, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_posts b - ()
+Jun 06 12:58:18 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 06 12:58:18 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 2 (A session had already been started - ignoring session_start())
+Jun 06 12:58:18 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 54 (Undefined variable: blog_comments)
+Jun 06 12:58:26 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /signin/new with parameters array (  'module' => 'signin',  'action' => 'new',)
+Jun 06 12:58:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 12:58:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 12:58:26 symfony [info] {signinActions} Call "signinActions->executeNew()"
+Jun 06 12:58:26 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/signin/templates/newSuccess.php"
+Jun 06 12:58:26 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:58:26 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 12:58:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 12:58:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:58:26 symfony [info] {sfWebDebugLogger} Configuration 4.53 ms (9)
+Jun 06 12:58:26 symfony [info] {sfWebDebugLogger} Factories 83.35 ms (1)
+Jun 06 12:58:26 symfony [info] {sfWebDebugLogger} Action "signin/new" 68.50 ms (1)
+Jun 06 12:58:26 symfony [info] {sfWebDebugLogger} View "Success" for "signin/new" 24.14 ms (1)
+Jun 06 12:58:26 symfony [info] {sfWebResponse} Send content (28803 o)
+Jun 06 12:59:00 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /s with parameters array (  'module' => 's',  'action' => 'index',)
+Jun 06 12:59:00 symfony [info] {sfFrontWebController} Action "s/index" does not exist
+Jun 06 12:59:00 symfony [err] {sfError404Exception} Action "s/index" does not exist.
+Jun 06 12:59:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 12:59:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:59:00 symfony [info] {sfWebDebugLogger} Configuration 2.49 ms (5)
+Jun 06 12:59:00 symfony [info] {sfWebDebugLogger} Factories 99.44 ms (1)
+Jun 06 12:59:02 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 12:59:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 12:59:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 12:59:02 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 12:59:02 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 12:59:02 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.post AS b__post, b.photo AS b__photo, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_posts b - ()
+Jun 06 12:59:02 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 06 12:59:02 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 2 (A session had already been started - ignoring session_start())
+Jun 06 12:59:02 symfony [err] {sfConfigurationException} The route "comment" does not exist.
+Jun 06 12:59:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 06 12:59:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 12:59:02 symfony [info] {sfWebDebugLogger} Configuration 4.29 ms (9)
+Jun 06 12:59:02 symfony [info] {sfWebDebugLogger} Factories 100.55 ms (1)
+Jun 06 12:59:02 symfony [info] {sfWebDebugLogger} Action "main/index" 118.26 ms (1)
+Jun 06 12:59:02 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 06 12:59:02 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 144.00 ms (1)
+Jun 06 13:04:32 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 13:04:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 13:04:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 13:04:32 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 13:04:32 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 13:04:32 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.post AS b__post, b.photo AS b__photo, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_posts b - ()
+Jun 06 13:04:32 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 06 13:04:32 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 2 (A session had already been started - ignoring session_start())
+Jun 06 13:04:32 symfony [err] {sfConfigurationException} The route "comment" does not exist.
+Jun 06 13:04:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 06 13:04:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 13:04:32 symfony [info] {sfWebDebugLogger} Configuration 8.21 ms (9)
+Jun 06 13:04:32 symfony [info] {sfWebDebugLogger} Factories 157.39 ms (1)
+Jun 06 13:04:32 symfony [info] {sfWebDebugLogger} Action "main/index" 157.00 ms (1)
+Jun 06 13:04:32 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 06 13:04:32 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 210.56 ms (1)
+Jun 06 13:05:35 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 13:05:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 13:05:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 13:05:35 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 13:05:35 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 13:05:35 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.post AS b__post, b.photo AS b__photo, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_posts b - ()
+Jun 06 13:05:35 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 06 13:05:35 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 2 (A session had already been started - ignoring session_start())
+Jun 06 13:05:35 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 13:05:35 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 13:05:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 13:05:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 13:05:35 symfony [info] {sfWebDebugLogger} Configuration 3.76 ms (9)
+Jun 06 13:05:35 symfony [info] {sfWebDebugLogger} Factories 85.57 ms (1)
+Jun 06 13:05:35 symfony [info] {sfWebDebugLogger} Action "main/index" 91.02 ms (1)
+Jun 06 13:05:35 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 06 13:05:35 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 45.89 ms (1)
+Jun 06 13:05:35 symfony [info] {sfWebResponse} Send content (39468 o)
+Jun 06 13:06:22 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 13:06:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 13:06:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 13:06:22 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 13:06:22 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 13:06:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.post AS b__post, b.photo AS b__photo, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_posts b - ()
+Jun 06 13:06:22 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 06 13:06:22 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 2 (A session had already been started - ignoring session_start())
+Jun 06 13:06:22 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 13:06:22 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 13:06:22 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/templates/layout.php on line 37 (Undefined index: name)
+Jun 06 13:06:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 13:06:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 13:06:22 symfony [info] {sfWebDebugLogger} Configuration 4.66 ms (9)
+Jun 06 13:06:22 symfony [info] {sfWebDebugLogger} Factories 145.83 ms (1)
+Jun 06 13:06:22 symfony [info] {sfWebDebugLogger} Action "main/index" 117.03 ms (1)
+Jun 06 13:06:22 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Jun 06 13:06:22 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 55.84 ms (1)
+Jun 06 13:06:22 symfony [info] {sfWebResponse} Send content (39065 o)
+Jun 06 13:07:21 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 13:07:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 13:07:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 13:07:21 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 13:07:21 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 13:07:21 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.post AS b__post, b.photo AS b__photo, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_posts b - ()
+Jun 06 13:07:21 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 06 13:07:21 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 2 (A session had already been started - ignoring session_start())
+Jun 06 13:07:21 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 13:07:21 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 13:07:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 13:07:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 13:07:21 symfony [info] {sfWebDebugLogger} Configuration 4.36 ms (9)
+Jun 06 13:07:21 symfony [info] {sfWebDebugLogger} Factories 140.62 ms (1)
+Jun 06 13:07:21 symfony [info] {sfWebDebugLogger} Action "main/index" 99.83 ms (1)
+Jun 06 13:07:21 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Jun 06 13:07:21 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 47.10 ms (1)
+Jun 06 13:07:21 symfony [info] {sfWebResponse} Send content (39469 o)
+Jun 06 13:07:24 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /signin/new with parameters array (  'module' => 'signin',  'action' => 'new',)
+Jun 06 13:07:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 13:07:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 13:07:24 symfony [info] {signinActions} Call "signinActions->executeNew()"
+Jun 06 13:07:24 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/signin/templates/newSuccess.php"
+Jun 06 13:07:24 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 13:07:24 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 13:07:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 13:07:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 13:07:24 symfony [info] {sfWebDebugLogger} Configuration 3.52 ms (9)
+Jun 06 13:07:24 symfony [info] {sfWebDebugLogger} Factories 121.23 ms (1)
+Jun 06 13:07:24 symfony [info] {sfWebDebugLogger} Action "signin/new" 100.45 ms (1)
+Jun 06 13:07:24 symfony [info] {sfWebDebugLogger} View "Success" for "signin/new" 27.25 ms (1)
+Jun 06 13:07:24 symfony [info] {sfWebResponse} Send content (29622 o)
+Jun 06 13:07:32 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /signin/new with parameters array (  'module' => 'signin',  'action' => 'new',)
+Jun 06 13:07:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 13:07:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 13:07:32 symfony [info] {signinActions} Call "signinActions->executeNew()"
+Jun 06 13:07:32 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/signin/templates/newSuccess.php"
+Jun 06 13:07:32 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 13:07:32 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 13:07:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 13:07:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 13:07:32 symfony [info] {sfWebDebugLogger} Configuration 4.24 ms (9)
+Jun 06 13:07:32 symfony [info] {sfWebDebugLogger} Factories 117.20 ms (1)
+Jun 06 13:07:32 symfony [info] {sfWebDebugLogger} Action "signin/new" 163.24 ms (1)
+Jun 06 13:07:32 symfony [info] {sfWebDebugLogger} View "Success" for "signin/new" 26.94 ms (1)
+Jun 06 13:07:32 symfony [info] {sfWebResponse} Send content (29632 o)
+Jun 06 13:07:41 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 13:07:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 13:07:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 13:07:42 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 13:07:42 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 13:07:42 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.post AS b__post, b.photo AS b__photo, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_posts b - ()
+Jun 06 13:07:42 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 06 13:07:42 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 2 (A session had already been started - ignoring session_start())
+Jun 06 13:07:42 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 13:07:42 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 13:07:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 13:07:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 13:07:42 symfony [info] {sfWebDebugLogger} Configuration 3.75 ms (9)
+Jun 06 13:07:42 symfony [info] {sfWebDebugLogger} Factories 115.36 ms (1)
+Jun 06 13:07:42 symfony [info] {sfWebDebugLogger} Action "main/index" 88.38 ms (1)
+Jun 06 13:07:42 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 06 13:07:42 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 43.10 ms (1)
+Jun 06 13:07:42 symfony [info] {sfWebResponse} Send content (39438 o)
+Jun 06 13:09:39 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 13:09:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 13:09:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 13:09:39 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 13:09:40 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 13:09:40 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.post AS b__post, b.photo AS b__photo, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_posts b - ()
+Jun 06 13:09:40 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 06 13:09:40 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 2 (A session had already been started - ignoring session_start())
+Jun 06 13:09:40 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 13:09:40 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 13:09:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 13:09:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 13:09:40 symfony [info] {sfWebDebugLogger} Configuration 4.26 ms (9)
+Jun 06 13:09:40 symfony [info] {sfWebDebugLogger} Factories 169.19 ms (1)
+Jun 06 13:09:40 symfony [info] {sfWebDebugLogger} Action "main/index" 138.40 ms (1)
+Jun 06 13:09:40 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Jun 06 13:09:40 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 60.96 ms (1)
+Jun 06 13:09:40 symfony [info] {sfWebResponse} Send content (39418 o)
+Jun 06 13:12:06 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 13:12:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 13:12:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 13:12:06 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 13:12:06 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 13:12:06 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.post AS b__post, b.photo AS b__photo, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_posts b - ()
+Jun 06 13:12:06 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 06 13:12:06 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 2 (A session had already been started - ignoring session_start())
+Jun 06 13:12:06 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 13:12:06 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 13:12:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 13:12:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 13:12:06 symfony [info] {sfWebDebugLogger} Configuration 3.85 ms (9)
+Jun 06 13:12:06 symfony [info] {sfWebDebugLogger} Factories 95.91 ms (1)
+Jun 06 13:12:06 symfony [info] {sfWebDebugLogger} Action "main/index" 90.54 ms (1)
+Jun 06 13:12:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Jun 06 13:12:06 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 43.96 ms (1)
+Jun 06 13:12:06 symfony [info] {sfWebResponse} Send content (39385 o)
+Jun 06 13:21:27 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 13:21:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 13:21:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 13:21:27 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 13:21:27 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 13:21:27 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.post AS b__post, b.photo AS b__photo, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_posts b - ()
+Jun 06 13:21:27 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 06 13:21:27 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfproject/blog/apps/frontend/modules/main/templates/indexSuccess.php on line 2 (A session had already been started - ignoring session_start())
+Jun 06 13:21:27 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 13:21:27 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 13:21:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 13:21:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 13:21:27 symfony [info] {sfWebDebugLogger} Configuration 3.88 ms (9)
+Jun 06 13:21:27 symfony [info] {sfWebDebugLogger} Factories 89.89 ms (1)
+Jun 06 13:21:27 symfony [info] {sfWebDebugLogger} Action "main/index" 100.31 ms (1)
+Jun 06 13:21:27 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Jun 06 13:21:27 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 44.87 ms (1)
+Jun 06 13:21:27 symfony [info] {sfWebResponse} Send content (39403 o)
+Jun 06 13:22:31 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /signin/new with parameters array (  'module' => 'signin',  'action' => 'new',)
+Jun 06 13:22:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 13:22:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 13:22:31 symfony [info] {signinActions} Call "signinActions->executeNew()"
+Jun 06 13:22:31 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/signin/templates/newSuccess.php"
+Jun 06 13:22:31 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 13:22:31 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 13:22:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 13:22:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 13:22:31 symfony [info] {sfWebDebugLogger} Configuration 3.80 ms (9)
+Jun 06 13:22:31 symfony [info] {sfWebDebugLogger} Factories 100.13 ms (1)
+Jun 06 13:22:31 symfony [info] {sfWebDebugLogger} Action "signin/new" 102.32 ms (1)
+Jun 06 13:22:31 symfony [info] {sfWebDebugLogger} View "Success" for "signin/new" 30.13 ms (1)
+Jun 06 13:22:31 symfony [info] {sfWebResponse} Send content (29604 o)
+Jun 06 13:25:33 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /signin/new with parameters array (  'module' => 'signin',  'action' => 'new',)
+Jun 06 13:25:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 13:25:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 13:25:33 symfony [info] {signinActions} Call "signinActions->executeNew()"
+Jun 06 13:25:33 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/signin/templates/newSuccess.php"
+Jun 06 13:25:33 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 13:25:33 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 13:25:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 13:25:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 13:25:33 symfony [info] {sfWebDebugLogger} Configuration 3.41 ms (9)
+Jun 06 13:25:33 symfony [info] {sfWebDebugLogger} Factories 186.97 ms (1)
+Jun 06 13:25:33 symfony [info] {sfWebDebugLogger} Action "signin/new" 177.51 ms (1)
+Jun 06 13:25:33 symfony [info] {sfWebDebugLogger} View "Success" for "signin/new" 168.08 ms (1)
+Jun 06 13:25:34 symfony [info] {sfWebResponse} Send content (40871 o)
+Jun 06 13:26:09 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /signin/new with parameters array (  'module' => 'signin',  'action' => 'new',)
+Jun 06 13:26:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 13:26:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 13:26:09 symfony [info] {signinActions} Call "signinActions->executeNew()"
+Jun 06 13:26:09 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/signin/templates/newSuccess.php"
+Jun 06 13:26:09 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 13:26:09 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 13:26:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 13:26:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 13:26:09 symfony [info] {sfWebDebugLogger} Configuration 4.45 ms (9)
+Jun 06 13:26:09 symfony [info] {sfWebDebugLogger} Factories 85.54 ms (1)
+Jun 06 13:26:09 symfony [info] {sfWebDebugLogger} Action "signin/new" 71.89 ms (1)
+Jun 06 13:26:09 symfony [info] {sfWebDebugLogger} View "Success" for "signin/new" 95.68 ms (1)
+Jun 06 13:26:09 symfony [info] {sfWebResponse} Send content (40923 o)
+Jun 06 13:41:03 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /signin/new with parameters array (  'module' => 'signin',  'action' => 'new',)
+Jun 06 13:41:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 13:41:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 13:41:03 symfony [info] {signinActions} Call "signinActions->executeNew()"
+Jun 06 13:41:03 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/signin/templates/newSuccess.php"
+Jun 06 13:41:04 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 13:41:04 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 13:41:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 13:41:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 13:41:04 symfony [info] {sfWebDebugLogger} Configuration 4.45 ms (9)
+Jun 06 13:41:04 symfony [info] {sfWebDebugLogger} Factories 460.21 ms (1)
+Jun 06 13:41:04 symfony [info] {sfWebDebugLogger} Action "signin/new" 375.95 ms (1)
+Jun 06 13:41:04 symfony [info] {sfWebDebugLogger} View "Success" for "signin/new" 325.37 ms (1)
+Jun 06 13:41:04 symfony [info] {sfWebResponse} Send content (41203 o)
+Jun 06 13:41:28 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /signin/new with parameters array (  'module' => 'signin',  'action' => 'new',)
+Jun 06 13:41:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 13:41:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 13:41:28 symfony [info] {signinActions} Call "signinActions->executeNew()"
+Jun 06 13:41:28 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/modules/signin/templates/newSuccess.php"
+Jun 06 13:41:28 symfony [info] {sfPHPView} Decorate content with "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 13:41:28 symfony [info] {sfPHPView} Render "/home/sfproject/blog/apps/frontend/templates/layout.php"
+Jun 06 13:41:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 13:41:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 13:41:28 symfony [info] {sfWebDebugLogger} Configuration 4.81 ms (9)
+Jun 06 13:41:28 symfony [info] {sfWebDebugLogger} Factories 252.97 ms (1)
+Jun 06 13:41:28 symfony [info] {sfWebDebugLogger} Action "signin/new" 160.06 ms (1)
+Jun 06 13:41:28 symfony [info] {sfWebDebugLogger} View "Success" for "signin/new" 137.45 ms (1)
+Jun 06 13:41:28 symfony [info] {sfWebResponse} Send content (41176 o)
